@@ -50,8 +50,7 @@ li {
  	cursor:pointer;
  }
  #sidemenu {
- 	width:175px;
- 	height:300px;
+ 	display:inline-block;
  	background-color: #000000;
  	text-align: center;
  }
