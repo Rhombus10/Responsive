@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive</title>
+<link rel="stylesheet" type="text/css" href="responsiveSTYLE.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var onOff = 0;
+
+function MenuSide(){
+if (onOff == 0){
+	document.getElementById("sidemenu").style.display = "block";
+	onOff = 1;
+}else {
+	document.getElementById('sidemenu').style.display = "none";
+	onOff = 0;
+}
+}
+ function resize(){
+ 	onOff = 0;
+ 	document.getElementById('sidemenu').style.display = "none";
+ }
+
+</script>
+</head>
+<body onresize="resize()">
+<div id="menu">
+	<img src="menu symbol.png" onClick="MenuSide()">
+	<div id="container">
+
+<li>Hello</li>
+<li>Contact</li>
+<li>LulW</li>
+<li>Champ</li>
+
+</div>
+
+</div>
+<div id="sidemenu">
+	<a>Hello</a>
+	<a>Contact</a>
+	<a>LulW</a>
+	<a>Champ</a>
+</div>
+</body>
+</html>
